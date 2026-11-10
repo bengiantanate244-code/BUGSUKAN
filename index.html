@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bugsukan Falls | Miagao, Iloilo</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #183b32;
+    background: #f5f8f3;
+    line-height: 1.6;
+}
+
+header {
+    background: #103d2c;
+    color: white;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 18px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #9ce6a9;
+}
+
+.hero {
+    min-height: 440px;
+    background:
+      linear-gradient(90deg, rgba(0,25,15,.85),
+      rgba(0,25,15,.15)),
+      url("bugsukan.jpg") center/cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 60px 10%;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 6vw, 65px);
+    line-height: 1.1;
+    margin: 12px 0;
+}
+
+.hero p {
+    max-width: 450px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #39965a;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #246e40;
+}
+
+section {
+    padding: 55px 10%;
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #174b36;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    align-items: center;
+    background: white;
+}
+
+.about img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.about p {
+    margin-bottom: 15px;
+}
+
+.activities {
+    background: #eaf3e9;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #163c3210;
+    transition: transform .3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #287348;
+    margin-bottom: 10px;
+}
+
+.gallery {
+    background: white;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.visit {
+    background: #eaf3e9;
+    text-align: center;
+}
+
+footer {
+    background: #103d2c;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media (max-width: 700px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 5px 8px;
+        display: inline-block;
+    }
+
+    .about,
+    .cards,
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        min-height: 380px;
+        padding: 40px 7%;
+    }
+
+    section {
+        padding: 40px 7%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div Bugsukan Falls</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#activities">Activities</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#visit">Visit</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+    <div>
+        <p>NATURE • ADVENTURE • MIAGAO</p>
+        <h1>Bugsukan Falls</h1>
+        <h2>Miagao, Iloilo</h2>
+        <p>Discover the beauty of nature and enjoy a peaceful
+        escape surrounded by greenery and refreshing waters.</p>
+        <a href="#about" class="btn">Explore Now →</a>
+    </div>
+</div>
+
+<section class="about" id="about">
+    <div>
+        <p><strong>DISCOVER NATURE</strong></p>
+        <h2 class="section-title">About Bugsukan Falls</h2>
+        <p>
+            Explore the natural beauty associated with Bugsukan Falls
+            in Miagao, Iloilo. Waterfalls offer a refreshing setting
+            to appreciate nature, enjoy the scenery, and spend time
+            with family and friends.
+        </p>
+        <p>
+            Help preserve the environment by keeping the surroundings
+            clean and respecting the natural habitat.
+        </p>
+        <a href="#visit" class="btn">Plan Your Visit</a>
+    </div>
+
+    <alt="Bugsukan Falls scenery">
+</section>
+
+<section class="activities" id="activities">
+    <h2 class="section-title">Things to Do</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>📸 Take Photos</h3>
+            <p>Capture beautiful memories and enjoy the scenery.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌊 Enjoy Nature</h3>
+            <p>Appreciate the refreshing water and peaceful surroundings.</p>
+        </div>
+
+        <div class="card">
+            <h3>🥾 Explore</h3>
+            <p>Discover the natural environment while following local safety rules.</p>
+        </div>
+    </div>
+</section>
+
+<section class="gallery" id="gallery">
+    <h2 class="section-title">Nature Gallery</h2>
+    <div class="gallery-grid">
+        <img src = "bugsukan falls1.jpg" width = "20%"= height = "25%"alt="bugsukan falls1">
+<img src = "bugsukan falls2.jpg" width = "20%"= height = "25%"alt="bugsukan falls2">
+<img src = "bugsukan falls3.jpg" width = "20%"= height = "25%"alt="bugsukan falls3">
+
+
+    </div>
+</section>
+
+<section class="visit" id="visit">
+    <h2 class="section-title">Visit Bugsukan Falls</h2>
+    <p><strong>Location:</strong> Miagao, Iloilo, Philippines</p>
+    <p>Check local directions, accessibility, weather, and safety
+    conditions before your trip.</p>
+    <br>
+    <a href="#home" class="btn">Back to Top ↑</a>
+</section>
+
+<footer>
+    <p>© 2026 Bugsukan Falls | Miagao, Iloilo</p>
+    <p>Preserve Nature. Keep Our Environment Clean. 🌿</p>
+</footer>
+
+</body>
+</html>
